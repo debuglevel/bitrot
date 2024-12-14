@@ -19,7 +19,7 @@ install: ${bin}
 
 # Creates cross-compiled tarred versions (for releases).
 arch: Makefile ${src}
-	for ga in "linux/amd64" "linux/386" "linux/arm" "linux/arm64" "linux/mips" "linux/mipsle"; do \
+	for ga in "linux/amd64" "linux/386" "linux/arm" "linux/arm64" "linux/mips" "linux/mipsle" "windows/amd64"; do \
 	  export GOOS="$${ga%/*}"; \
 	  export GOARCH="$${ga#*/}"; \
 	  dst="./${archdir}/$${GOOS}-$${GOARCH}"; \
