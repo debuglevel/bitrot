@@ -1,5 +1,10 @@
 name: "tagged-release"
 
+on:
+  push:
+    branch: "main"
+      
+
 jobs:
   tagged-release:
     name: "Tagged Release"
