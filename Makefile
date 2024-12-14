@@ -1,5 +1,5 @@
 .PHONY: arch clean install
-
+ 
 bin := bitrot
 bindir := /usr/local/bin
 archdir := arch
